@@ -253,6 +253,10 @@ int main(int argc, char* argv[]) {
 
     // Read file
     string flag = argv[1], in_file = argv[2]; // Possibly dangerous
+    if (flag == "-h" or flag == "--help") {
+        cerr << "Usage: " << argv[0] << " -c|-d <filename>" << endl;
+        return 0;
+    }
 
     if (flag == "-c") {
         encode(in_file);
