@@ -2,8 +2,31 @@
 
 I'm bored and made this.
 
+## Build
+
+```bash
+g++ -std=c++17 -O2 -o ess src/encode.cpp
+```
+
+This builds a single binary named `ess`.
+
 ## Usage
-TODO. I'm taking my sweet time on this.
+
+Compress a file:
+
+```bash
+./ess -c path/to/input.txt
+```
+
+This writes a compressed archive next to the input file, e.g. `path/to/input.ess`.
+
+Decompress an archive:
+
+```bash
+./ess -d path/to/input.ess
+```
+
+This recreates the original file using the name stored inside the archive.
 
 ## Background
 I was reading through [CPH](https://cses.fi/book/book.pdf) for the millionth time, and similarly, I was going to once again skip over uninteresting sections. One of these was under the Greedy Algorithms section, Data Compression. Who reads the greedy section anyway?
