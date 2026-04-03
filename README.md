@@ -5,7 +5,7 @@ I'm bored and made this.
 ## Build
 
 ```bash
-g++ -std=c++17 -O2 -o ess src/encode.cpp
+g++ -std=c++17 -O2 -o ess src/main.cpp
 ```
 
 This builds a single binary named `ess`.
